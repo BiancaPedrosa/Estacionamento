@@ -4,7 +4,7 @@
 	<title>Estacione Aqui</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="https://img.icons8.com/plasticine/50/000000/car--v2.png"/>
+	<link rel="icon" href="https://icons8.com/icon/acrodBmMVwX5/add-link"/>
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">

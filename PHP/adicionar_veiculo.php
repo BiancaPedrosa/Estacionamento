@@ -1,5 +1,6 @@
 <?php
     session_start();
+    include("conexão.php");
     $Modelo=$_POST['Modelo'];
     $Cor=$_POST['Cor'];
     $Marca=$_POST['Marca'];
@@ -8,9 +9,6 @@
     $TelefoneProprietario=$_POST['TelefoneProprietario'];
     $NumeroEstacionamento=$_POST['NumeroEstacionamento'];
     $Entrada = date("Y-m-d H:i:s");
-
-    include("conexão.php");
-
 
     $query=("insert into  tabela_veiculo(NumeroEstacionamento, Modelo, Cor, Marca,  Placa, NomeProprietario, TelefoneProprietario, Entrada) 
     values('$NumeroEstacionamento','$Modelo','$Cor','$Marca','$Placa','$NomeProprietario','$TelefoneProprietario','$Entrada');");
