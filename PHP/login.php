@@ -1,7 +1,7 @@
 <?php
 session_start();
 $UsuarioAdmin= $_POST['NomeUsuario'];
-$Senha = $_POST['Senha'];
+$Senha = md5($_POST['Senha']);
 
 
 //conectando ao mysql e ao bd

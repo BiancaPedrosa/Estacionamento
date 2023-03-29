@@ -27,13 +27,13 @@
 				<form method="POST" action="PHP\login.php" class="login100-form validate-form">
 					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
 						<span class="label-input100">Nome de Usuário: </span>
-						<input class="input100" type="text" for="NomeUsuario" name="NomeUsuario" placeholder="">
+						<input class="input100" type="text" for="NomeUsuario" name="NomeUsuario" value="admin">
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
 						<span class="label-input100">Senha: </span>
-						<input class="input100" type="password" name="Senha" placeholder="123">
+						<input class="input100" type="password" name="Senha" value="123">
 						<span class="focus-input100"></span>
 					</div>
 
