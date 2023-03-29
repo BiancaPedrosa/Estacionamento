@@ -33,10 +33,10 @@ CREATE TABLE tabela_veiculo (
   NomeProprietario varchar(120) DEFAULT NULL,
   TelefoneProprietario bigint(10) DEFAULT NULL,
   Entrada timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-  Saida timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  Saida timestamp NULL DEFAULT NULL,
   TarifaEstacionamento integer default 10,
   Convenio mediumtext  NULL,
-  Status varchar(10) DEFAULT 'ENTRADA',
+  Status varchar(10) DEFAULT 'Veiculo Dentro',
   PRIMARY KEY (ID)
 );
 

@@ -40,7 +40,7 @@
 
                             <?php
                                 include('conexão.php');
-                                $ret=mysqli_query($db,"select * from   tabela_veiculo where Status = 'ENTRADA' ORDER BY nomeproprietario ASC");
+                                $ret=mysqli_query($db,"select * from   tabela_veiculo where Status = 'Dentro' ORDER BY nomeproprietario ASC");
                                 $cnt=1;
                                 while ($row=mysqli_fetch_array($ret)) {
                             ?>

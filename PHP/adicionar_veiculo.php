@@ -10,8 +10,8 @@
     $NumeroEstacionamento=$_POST['NumeroEstacionamento'];
     $Entrada = date("Y-m-d H:i:s");
 
-    $query=("insert into  tabela_veiculo(NumeroEstacionamento, Modelo, Cor, Marca,  Placa, NomeProprietario, TelefoneProprietario, Entrada) 
-    values('$NumeroEstacionamento','$Modelo','$Cor','$Marca','$Placa','$NomeProprietario','$TelefoneProprietario','$Entrada');");
+    $query=("insert into  tabela_veiculo(NumeroEstacionamento, Modelo, Cor, Marca,  Placa, NomeProprietario, TelefoneProprietario, Entrada, Status) 
+    values('$NumeroEstacionamento','$Modelo','$Cor','$Marca','$Placa','$NomeProprietario','$TelefoneProprietario','$Entrada','Dentro');");
     $resultado = mysqli_query($db,$query);
 
     if($resultado){

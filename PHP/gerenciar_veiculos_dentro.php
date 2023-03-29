@@ -62,7 +62,7 @@
           </div>
           <?php 
           $entrada = $row['Entrada'];
-          $saida = date("Y-m-d H:i");
+          $saida = date("Y-m-d H:i:s");
           $permanencia = ((strtotime($saida) - strtotime($entrada))/3600);
           $TarifaEstacionamento=10;
           if($permanencia>1){
