@@ -1,17 +1,6 @@
 
 
-<!doctype html>
-<html class="no-js" lang="">
-  <head>
-      
-      <title>Estacione Aqui</title>
-      <link rel="stylesheet" href="..\CSS\estilo_barra_de_rolagem.css">
-      <link rel="stylesheet" href="CSS\estilo_index.css">
-      <link rel="icon" href="https://img.icons8.com/plasticine/50/000000/car--v2.png"/>
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-      <link rel="stylesheet" href="..\CSS\estilo_adicionar_veiculos.css">
-    
-  </head>
+
 
   <body class="section" style="background: #45d6b2; font-family: 'Trirong', serif; ">
         

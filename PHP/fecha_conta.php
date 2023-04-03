@@ -1,6 +1,6 @@
 <?php
 
-        include_once('conexão.php');
+        include_once('conexao.php');
 
           $ID=$_POST['ID'];
           $Saida = $_POST['Saida'];

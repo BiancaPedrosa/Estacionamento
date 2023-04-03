@@ -25,7 +25,7 @@
         <h3 style="line-height:50px;text-align: center; color:white; background: #1abc9c; border-radius: 30px 30px; width: 94%;  margin: 30px;  font-family: 'Trirong', serif;"> Dados do Cliente</h3>        <br>   
 
         <?php
-        include_once('conexão.php');
+        include_once('conexao.php');
         $ID=$_GET['ID'];
         $ret=mysqli_query($db,"select * from tabela_veiculo where ID='$ID'");
         $cnt=1;

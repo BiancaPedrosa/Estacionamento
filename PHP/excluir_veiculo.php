@@ -1,7 +1,7 @@
 
 <?php
     session_start();
-    include_once("conexão.php");
+    include_once("conexao.php");
 
     $ID=$_REQUEST['ID'];
     $query = "DELETE FROM tabela_veiculo WHERE ID=$ID"; 

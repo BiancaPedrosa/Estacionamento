@@ -41,7 +41,7 @@
                         <tbody>
 
                             <?php
-                                include_once("conexão.php");   
+                                include_once("conexao.php");   
                                 
                                       
                                 $ret=mysqli_query($db,"select *from tabela_loja");

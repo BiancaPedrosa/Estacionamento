@@ -75,3 +75,4 @@
 	</div>
 </body>
 </html>
+<?php include "partials/rodape.php";?>

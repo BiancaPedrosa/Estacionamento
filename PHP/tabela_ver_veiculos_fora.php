@@ -40,7 +40,7 @@
                         <tbody>
 
                             <?php
-                                include_once("conexão.php");           
+                                include_once("conexao.php");           
                                 $ret=mysqli_query($db,"select *from tabela_veiculo where Status='Fora' ORDER BY nomeproprietario ASC");
                                 $cnt=1;
                                 while ($row=mysqli_fetch_array($ret)) {

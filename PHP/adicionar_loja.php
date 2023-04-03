@@ -7,7 +7,7 @@
     $TelefoneLoja=$_POST['TelefoneLoja'];
 
 
-    include("conexão.php");
+    include("conexao.php");
 
     //inserindo dados do formulario no bd
     $query = "insert into tabela_loja ( Nomeloja, CEP, Email, TelefoneLoja) 

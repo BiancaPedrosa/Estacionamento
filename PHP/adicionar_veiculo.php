@@ -1,6 +1,6 @@
 <?php
     session_start();
-    include("conexão.php");
+    include("conexao.php");
     $Modelo=$_POST['Modelo'];
     $Cor=$_POST['Cor'];
     $Marca=$_POST['Marca'];

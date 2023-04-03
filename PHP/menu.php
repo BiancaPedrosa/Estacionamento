@@ -1,12 +1,13 @@
+<?php session_start();?>
 <html>
-    <head>
-        <title>Estacione Aqui</title>
+  <head>
+      <title>Estacione Aqui</title>
         <link rel="stylesheet" href="../CSS/estilo_menu.css">
-        <link rel="icon" href="https://img.icons8.com/plasticine/50/000000/car--v2.png"/>
+      <link rel="icon" href="https://img.icons8.com/plasticine/50/000000/car--v2.png"/>
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    </head>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  </head>
     
 
     <body>
@@ -19,7 +20,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="..\PHP\página_de_entrada_admin.php">Página inicial<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="..\PHP\pagina_de_entrada_admin.php">Página inicial<span class="sr-only">(current)</span></a>
                         </li>
                                           
                         <li class="nav-item dropdown">
@@ -29,7 +30,7 @@
                             <a class="dropdown-item"  href="tabela_ver_lojas_conveniadas.php">Lojas Conveniadas</a>
                             </div>  
                         </li>
-                        
+                                      
                         
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Veículos</a>
@@ -44,10 +45,10 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item ">
-                            <a class="nav-link" href="#"><img src="https://img.icons8.com/plasticine/50/000000/envelope-number.png"/> Contatos <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#"><img src="https://img.icons8.com/plasticine/50/000000/envelope-number.png"/>Suporte <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><img src="https://img.icons8.com/plasticine/45/000000/automatic.png"/> Configurar</a>
+                            <a class="nav-link" href="form_tarifa.php"><img src="../images/icons8-real-64.png"/><?php echo $_SESSION["tarifa"];?> </a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
@@ -78,5 +79,3 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>   
     </body>
-
-</html>
