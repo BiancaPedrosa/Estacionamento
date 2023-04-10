@@ -14,8 +14,8 @@
       
         <br>
         <?php
-        session_start();
-        include('conexao.php');
+
+        include('../controllers/conexao.php');
         include_once('menu.php');
         
       
@@ -61,16 +61,18 @@
             <p>&nbsp;<b>Placa:</b> &nbsp; <?php  echo $row['Placa'];?></p>
           </div>
           <?php 
+
+          $TarifaEstacionamento=$_SESSION['tarifa'];
           $entrada = $row['Entrada'];
           $saida = date("Y-m-d H:i:s");
-          $permanencia = ((strtotime($saida) - strtotime($entrada))/3600);
-          $TarifaEstacionamento=10;
+          $permanencia = ceil(((strtotime($saida) - strtotime($entrada))/3600));
+         
           if($permanencia>1){
-           $TarifaEstacionamento = 10 + (($permanencia-1)*($TarifaEstacionamento*0.5));
+           $TarifaEstacionamento = round($_SESSION['tarifa'] + (($permanencia-1)*($_SESSION['tarifa']*0.5)),2);
           }
       
           ?>
-          <form action="fecha_conta.php"  method="POST" class="form-horizontal">
+          <form action="../controllers/fecha_conta.php"  method="POST" class="form-horizontal">
 
           
               <p><b>Entrada:</b> &nbsp; <input  readonly type="datetime-local" name="Entrada" value="<?php   echo $entrada;?>"></p>
@@ -88,8 +90,9 @@
                 <?php } ?>             
               </select></p>
               
-              <p><b>Tarifa do Estacionamento: </b><input type="text" class="form-control" name="TarifaEstacionamento" value="<?php echo $TarifaEstacionamento;?>" required> </p>
-              
+              <p><b>Tarifa do Estacionamento: </b><input type="hidden" class="form-control" name="TarifaEstacionamento" 
+              value="<?php echo $TarifaEstacionamento;?>" required> </p>
+              <?php echo "<pre>".$_SESSION['tarifa'].' + ('.($permanencia-1).'*'.($_SESSION['tarifa']/2).' ) = '.$TarifaEstacionamento."</pre>";?>
               <p><b>Status : </b> <select type= "readonly"name="Status" class="form-control"><option value="Fora">Veiculo Fora</option></select></p>
               
       

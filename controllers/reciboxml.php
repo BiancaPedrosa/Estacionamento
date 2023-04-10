@@ -26,7 +26,7 @@
           $xml .= '<telefone>' . $row['TelefoneProprietario'] . '</telefone>';
           $xml .= '<entrada>' . $row['Entrada'] . '</entrada>';
           $xml .= '<saida>' . $row['Saida'] . '</saida>';
-          $xml .= '<tarifa>' . $row['Tarifa'] . '</tarifa>';
+          $xml .= '<tarifa>' . $row['TarifaEstacionamento'] . '</tarifa>';
      }
      // Fechamento da raiz
      $xml .= '</recibo>';

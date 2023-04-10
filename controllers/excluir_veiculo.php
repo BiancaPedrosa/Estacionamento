@@ -8,5 +8,5 @@
     $result = mysqli_query($db,$query) or die ( mysqli_error($db));
 
     if($result)
-    header("Location: tabela_ver_veiculos_fora.php"); 
+    header("Location: ../views/tabela_ver_veiculos_fora.php"); 
 ?>

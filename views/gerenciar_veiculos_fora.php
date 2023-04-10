@@ -18,14 +18,14 @@
     <br>
     <div class="container" style="background: rgba(215, 246, 236, 0.87);border-radius: 30px 30px;  font-family: 'Trirong', serif; ">
       <br>
-      <?php session_start(); include_once('menu.php');?>
+      <?php include_once('menu.php');?>
      
       <div class="bloco" style="background: #e2fcec;  border-radius: 30px 30px; width: 94%;  margin: 30px  ;">
         <br>
         <h3 style="line-height:50px;text-align: center; color:white; background: #1abc9c; border-radius: 30px 30px; width: 94%;  margin: 30px;  font-family: 'Trirong', serif;"> Dados do Cliente</h3>        <br>   
 
         <?php
-        include_once('conexao.php');
+        include_once('../controllers/conexao.php');
         $ID=$_GET['ID'];
         $ret=mysqli_query($db,"select * from tabela_veiculo where ID='$ID'");
         $cnt=1;

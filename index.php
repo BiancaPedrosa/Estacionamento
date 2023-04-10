@@ -1,3 +1,7 @@
+<?php
+	session_start();
+?>
+	
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -11,9 +15,6 @@
 <!--===============================================================================================-->
 </head>
 <body>
-	<?php
-	session_start();
-	?>
 	
 	<div class="limiter">
 		<div class="container-login100">
@@ -24,7 +25,7 @@
 					</span>
 				</div>
 
-				<form method="POST" action="PHP\login.php" class="login100-form validate-form">
+				<form method="POST" action="controllers\login.php" class="login100-form validate-form">
 					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
 						<span class="label-input100">Nome de Usuário: </span>
 						<input class="input100" type="text" for="NomeUsuario" name="NomeUsuario" value="admin">
@@ -75,4 +76,3 @@
 	</div>
 </body>
 </html>
-<?php include "partials/rodape.php";?>

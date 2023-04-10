@@ -66,7 +66,7 @@
     </tr>
 <?php } ?> <!--fim do if-->
   </table>
-  <a href="reciboxml2.php?ID=<?php echo $row['ID'];?>"><i><img src="../img/icons8-arquivo-xml-64.png"/></i> </a>
+  <a href="reciboxml.php?ID=<?php echo $row['ID'];?>"><i><img src="../img/icons8-arquivo-xml-64.png"/></i> </a>
           
 <?php }?> <!--fim do while-->
 </div>

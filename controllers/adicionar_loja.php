@@ -15,7 +15,7 @@
     $result = mysqli_query($db,$query);
 
     if($result){
-         header('location:tabela_ver_lojas_conveniadas.php ');
+         header('location:../views/tabela_ver_lojas_conveniadas.php');
     }
     else{
         echo mysqli_error($db);       

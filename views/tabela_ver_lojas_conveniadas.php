@@ -15,11 +15,7 @@
         <div  class="container" style=" font-family: 'Trirong', serif; background: rgba(215, 246, 236, 0.87);border-radius: 30px 30px; ">
            
             <br>
-            <?php 
-                session_start();
-                include_once('menu.php');
-            
-            ?>
+            <?php include_once('menu.php');?>
             <div class="bloco" style="background: #e2fcec;  border-radius: 30px 30px; width: 94%;  margin: 30px  ;">
             
                 <br>
@@ -35,16 +31,12 @@
                                 <th style="text-align: center;" scope="col">CEP</th>
                                 <th style="text-align: center;" scope="col">E-mail</th>
                                 <th style="text-align: center;" scope="col">Telefone</th>
-                                <th style="text-align: center;" width="18%" scope="col">Ação</th>
                             </tr>      
                         </thead>
                         <tbody>
 
                             <?php
-                                include_once("conexao.php");   
-                                
-                                      
-                                $ret=mysqli_query($db,"select *from tabela_loja");
+                                $ret=require('../controllers/obter_lojas.php');
                                 $cnt=1;
                                 while ($row=mysqli_fetch_array($ret)) {
                             ?>
@@ -55,11 +47,6 @@
                                 <td class="table-light" style="font-weight: bold;  text-align: center;"><?php  echo $row['CEP'];?></td>
                                 <td class="table-light" style="font-weight: bold; text-align: center;"><?php  echo $row['Email'];?></td>
                                 <td class="table-light" style="font-weight: bold; text-align: center;"><?php  echo $row['TelefoneLoja'];?></td>
-                                <td class="table-light">
-
-                                    
-                               
-                                </td>
                             </tr>
 
                             <?php 

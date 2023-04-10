@@ -18,7 +18,6 @@
 
             <br>
             <?php 
-            session_start();
                 include_once('menu.php');
             ?>
             <div class="bloco" style="background: #e2fcec;  border-radius: 30px 30px; width: 94%;  margin: 30px  ;">
@@ -39,8 +38,8 @@
                         <tbody>
 
                             <?php
-                                include('conexao.php');
-                                $ret=mysqli_query($db,"select * from   tabela_veiculo where Status = 'Dentro' ORDER BY nomeproprietario ASC");
+                                
+                                $ret=require('../controllers/obter_veiculos_dentro.php');
                                 $cnt=1;
                                 while ($row=mysqli_fetch_array($ret)) {
                             ?>

@@ -15,8 +15,12 @@
        
             <br>
             <?php
-            
-            include("menu.php");
+            include('menu.php');
+            if(!isset($_SESSION['tarifa'])){
+                header('Location: form_tarifa.php');
+            }
+          
+
             ?>
             <h1 style="text-align: center; font-family: 'Trirong', serif;"><b> Estacione Aqui </b><img src="https://img.icons8.com/plasticine/50/000000/car--v2.png" height="60" alt=""></h1>
             <br> 

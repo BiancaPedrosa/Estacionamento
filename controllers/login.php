@@ -1,11 +1,11 @@
 <?php
-session_start();
+
 $UsuarioAdmin= $_POST['NomeUsuario'];
 $Senha = md5($_POST['Senha']);
 
 
 //conectando ao mysql e ao bd
-include("conexao.php");
+include("../controllers/conexao.php");
 
 mysqli_select_db($db,'estacionamento');
 $sql="select NomeUsuario, Senha from tabela_admin where NomeUsuario = '$UsuarioAdmin' AND Senha = '$Senha'";
@@ -15,7 +15,7 @@ $num_results = mysqli_num_rows($result);
 if($num_results>0){
    
 
-include('pagina_de_entrada_admin.php');
+header('location:../views/pagina_de_entrada_admin.php');
 
 }
 else{

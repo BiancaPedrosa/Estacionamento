@@ -1,5 +1,4 @@
 <?php
-    session_start();
     include("conexao.php");
     $Modelo=$_POST['Modelo'];
     $Cor=$_POST['Cor'];
@@ -16,7 +15,7 @@
 
     if($resultado){
 
-    header('location:tabela_ver_veiculos_dentro.php ');
+    header('location:../views/tabela_ver_veiculos_dentro.php ');
     }
     else
         {
