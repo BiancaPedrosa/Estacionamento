@@ -68,7 +68,7 @@
           $permanencia = ceil(((strtotime($saida) - strtotime($entrada))/3600));
          
           if($permanencia>1){
-           $TarifaEstacionamento = round($_SESSION['tarifa'] + (($permanencia-1)*($_SESSION['tarifa']*0.5)),2);
+           $TarifaEstacionamento = round(($_SESSION['tarifa'] + (($permanencia-1)*($_SESSION['tarifa']*0.5))),2);
           }
       
           ?>
@@ -98,7 +98,7 @@
       
               <input type="hidden" value="<?php echo $row['ID'];?>" name="ID">
               
-              <p style="text-align: center;"><button class="btn btn-success btn-lg "> <b> Enviar </b> </button></p>
+              <p style="text-align: center;"><button class="btn btn-success bt_n-lg "> <b> Enviar </b> </button></p>
               <br>
               
           </form>

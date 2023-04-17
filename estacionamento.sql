@@ -36,7 +36,7 @@ CREATE TABLE tabela_veiculo (
   Saida timestamp NULL DEFAULT NULL,
   TarifaEstacionamento integer default 10,
   Convenio mediumtext  NULL,
-  Status varchar(10) DEFAULT 'Veiculo Dentro',
+  Status varchar(10) DEFAULT 'Dentro',
   PRIMARY KEY (ID)
 );
 
@@ -46,6 +46,8 @@ CREATE TABLE tabela_loja (
   CEP varchar(120) DEFAULT NULL,
   TelefoneLoja varchar(120) DEFAULT NULL,
   Email varchar(120) DEFAULT NULL,
+  Saldo decimal(10,2) default 0,
+  DataAcerto timestamp null DEFAULT NULL,
   PRIMARY KEY (ID_loja )
 );
 

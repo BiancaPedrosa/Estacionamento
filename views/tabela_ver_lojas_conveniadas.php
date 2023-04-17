@@ -16,8 +16,7 @@
            
             <br>
             <?php include_once('menu.php');?>
-            <div class="bloco" style="background: #e2fcec;  border-radius: 30px 30px; width: 94%;  margin: 30px  ;">
-            
+            <div class="bloco" style="background: #e2fcec;  border-radius: 30px 30px; width: 94%;  margin: 30px  ;">   
                 <br>
                 <h2 style=" font-family: 'Trirong', serif; line-height:50px; text-align: center; color:white; background: #1abc9c; border-radius: 30px 30px; width: 94%;  margin: 30px;"><b> Lojas Conveniadas</b></h2>
                 <br>   

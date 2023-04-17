@@ -1,5 +1,5 @@
 <?php
-
+        session_start();
         include_once('conexao.php');
 
           $ID=$_POST['ID'];
@@ -8,12 +8,20 @@
           $Permanencia= $_POST["Permanencia"];
           $TarifaEstacionamento=$_POST['TarifaEstacionamento'];
           $Status = $_POST["Status"];
+          $desconto = $_SESSION['tarifa']/2;
 
-          if($convenio!=''){
-            $TarifaEstacionamento=$TarifaEstacionamento-($_SESSION['tarifa']/2);
+          if($Convenio!=''){
+            $TarifaEstacionamento=$TarifaEstacionamento-$desconto;
           }
         
            $query=mysqli_query($db, "update tabela_veiculo set Status='$Status',TarifaEstacionamento='$TarifaEstacionamento', Convenio='$Convenio', Saida='$Saida' where ID='$ID'");
+            
+           if(!$query){
+              echo mysqli_error($db);
+          }else{
+            header("location:../views/gerenciar_veiculos_fora.php?ID=$ID");
+          }
+          $query=mysqli_query($db, "update tabela_loja set Saldo=Saldo + $desconto where NomeLoja='$Convenio'");
             
            if(!$query){
               echo mysqli_error($db);
