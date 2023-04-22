@@ -1,13 +1,7 @@
-
-
-
-
+<?php  include('menu.php')?>
   <body class="section" style="background: #45d6b2; font-family: 'Trirong', serif; ">
         
     <div class="container mt-4"  style=" font-family: 'Trirong', serif; background: rgba(215, 246, 236, 0.87);border-radius: 30px 30px; ">
-      <br>
-
-      <?php  include('menu.php')?>
      
       <div class="login">
         <h1 style=" font-family: 'Trirong', serif;"> <b>Cadastrar Veículo</b> <img src="https://img.icons8.com/color/60/000000/car-badge.png"/></h1>

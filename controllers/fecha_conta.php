@@ -1,6 +1,6 @@
 <?php
         session_start();
-        include_once('conexao.php');
+        include_once('../database/conexao.php');
 
           $ID=$_POST['ID'];
           $Saida = $_POST['Saida'];

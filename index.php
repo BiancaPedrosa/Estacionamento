@@ -53,23 +53,13 @@
 						</div>
 						
 					</div>
-					<?php 
-					//Recuperando o valor da variável global, os erro de login.
-					if(isset($_SESSION['error_autenticacao'])){
-						echo $_SESSION['error_autenticacao'];
-					
-						unset($_SESSION['error_autenticacao']);
 						
-					}?>
-					
-					
 					<div class="container-login100-form-btn">
 						
 						<button type="submit" name="submit" class="login100-form-btn">
 							Entrar
 						</button>
 					</div>
-					
 				</form>
 			</div>
 		</div>

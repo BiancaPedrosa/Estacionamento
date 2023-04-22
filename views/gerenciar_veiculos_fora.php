@@ -1,23 +1,4 @@
 
-
-<!doctype html>
-
-<html lang="">
-  <head>
-    
-      <title>Estacione Aqui</title>
-      <link rel="stylesheet" href="..\CSS\estilo_barra_de_rolagem.css">
-      <link rel="icon" href="https://img.icons8.com/plasticine/50/000000/car--v2.png"/>
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        
-
-  </head>
-
-  <body class="section" style="background: #45d6b2; font-family: 'Trirong', serif;">
-
-    <br>
-    <div class="container" style="background: rgba(215, 246, 236, 0.87);border-radius: 30px 30px;  font-family: 'Trirong', serif; ">
-      <br>
       <?php include_once('menu.php');?>
      
       <div class="bloco" style="background: #e2fcec;  border-radius: 30px 30px; width: 94%;  margin: 30px  ;">
@@ -25,7 +6,7 @@
         <h3 style="line-height:50px;text-align: center; color:white; background: #1abc9c; border-radius: 30px 30px; width: 94%;  margin: 30px;  font-family: 'Trirong', serif;"> Dados do Cliente</h3>        <br>   
 
         <?php
-        include_once('../controllers/conexao.php');
+        include_once('../database/conexao.php');
         $ID=$_GET['ID'];
         $ret=mysqli_query($db,"select * from tabela_veiculo where ID='$ID'");
         $cnt=1;
@@ -33,7 +14,7 @@
 
 
         ?>
-         <form method="POST"> 
+        <form method="POST"> 
         <div class="bloco_cliente" style=" border-radius: 30px 30px;  margin: 30px; display: inline-block; ">
           <div style="float: left;position:relative;">
             <img  src="https://img.icons8.com/plasticine/200/000000/user-male-circle.png" />
@@ -74,8 +55,6 @@
           
         </div>
         <br>
- 
-        
         <p style="text-align: center;"><a href="tabela_ver_veiculos_fora.php" class="btn btn-success btn-lg active" role="button" aria-pressed="true"><b>Voltar</b></a></p>
       </div>
       <br>
@@ -83,15 +62,7 @@
     </div>
     <br>
     <?php }  ?>
-
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    
   </body>
-  
 </html>
 
 

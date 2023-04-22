@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="pt-BR">
+<html lang="pt-BR">
     <head>
     
         <title>Estacione Aqui</title>
@@ -12,8 +12,7 @@
     </head>
     <body class="section" style="background: #45d6b2; font-family: 'Trirong', serif; ">
         <br>
-        <div  class="container" style=" font-family: 'Trirong', serif; background: rgba(215, 246, 236, 0.87);border-radius: 30px 30px; ">
-           
+        <div  class="container" style=" font-family: 'Trirong', serif; background: rgba(215, 246, 236, 0.87);border-radius: 30px 30px; "> 
             <br>
             <?php include_once('menu.php');?>
             <div class="bloco" style="background: #e2fcec;  border-radius: 30px 30px; width: 94%;  margin: 30px  ;">   
